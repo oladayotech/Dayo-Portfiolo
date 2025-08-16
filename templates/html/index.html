@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oladayo's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #dccfbc;
+      /* background-color: #d3c3ab; */
+      /* background-color: #D1C0A7; */
+      /* background-color: #C9A97C; */
+      /*background-color: #B68C5A; /* slightly darker brown */
+      font-family: 'Libre Baskerville', sans-serif;
+      /*font-family: 'PT Sans', sans-serif; /* https://fonts.google.com/share?selection.family=Noto+Sans+JP:wght@100..900|PT+Sans:ital,wght@0,400;0,700;1,400;1,700 */ 
+      /* font-family: 'Poppins', sans-serif; */
+    }
+    header {
+      /* padding: 1rem 0; */
+      padding: 10px 0 20px 0;
+      border-bottom: 2.5px solid rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-weight: 700;
+    }
+    header nav a {
+      /* margin-left: 1rem; */
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    header nav a:hover{
+      color: #E27D60;
+    }
+    .intro {
+      padding: 2rem 0;
+    }
+    .intro h2 {
+      color: #E27D60; /* muted orange */
+      font-weight: 700;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    /* Stacks scrolling section */
+    .stacks-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      /* background: rgba(0,0,0,0.05); */
+      padding: 1rem 0;
+      margin: 2rem auto;
+      /* margin-left: 100px;
+      margin-right: 100px; */
+      width: 85%;
+    }
+    .stacks {
+      display: inline-block;
+      animation: scroll 15s linear infinite;
+    }
+    .stack-badge {
+      background-color: #E27D60;
+      color: white;
+      border-radius: 12px;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+      gap: 0.4rem;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    footer {
+      margin-top: 2rem;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile responsiveness */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header nav a {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .intro .col-md-7, 
+  .intro .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .intro img {
+    margin-top: 20px;
+    max-width: 150px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .stacks-wrapper {
+    width: 95%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+
+  </style>
+</head>
+<body >
+
+  <!-- Header -->
+  <header class="container d-lg-flex justify-content-between align-items-center mt-4">
+    <h1>Arogundade Oladayo</h1>
+    <nav class="mt-md-4">
+      <a href="#">History</a>
+      <a href="project.html">Projects</a>
+      <a href="#">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+<section class="intro container">
+  <div class="row align-items-center">
+    
+    <!-- Text Column -->
+    <div class="col-md-7">
+      <h2 class="mb-4">Hey there! ✨</h2>
+      <p>
+        I'm an aspiring developer who enjoys building web apps as a way to learn and grow.  
+        Most of what I know comes from trying things out — setting up projects, solving problems, and figuring things out as I go.  
+        Alongside this, I’ve been practicing data structures and algorithms to improve my problem-solving skills.
+      </p>
+    </div>
+    
+    <!-- Image Column -->
+    <div class="col-md-5 text-center ">
+      <!-- <img src="C:\Users\USER\Desktop\projects\Dayo-Portfiolo\images.jpeg" 
+           alt="pics" 
+           class="img-fluid" 
+           style="max-width: 200px;"> -->
+
+      <img src="C:\Users\USER\Desktop\projects\Dayo-Portfiolo\download (5).jpeg" 
+           alt="pics" 
+           class="img-fluid" 
+           style="max-width: 200px;">
+
+      <!-- <img src="C:\Users\USER\Desktop\projects\Dayo-Portfiolo\download.png" 
+           alt="pics" 
+           class="img-fluid" 
+           style="max-width: 200px;"> -->
+    </div>
+    
+  </div>
+</section>
+
+  <!-- Stacks Section -->
+  <div class="stacks-wrapper ">
+    <div class="stacks">
+      <span class="stack-badge"><i class="bi bi-filetype-html"></i> HTML</span>
+      <span class="stack-badge"><i class="bi bi-filetype-css"></i> CSS</span>
+      <span class="stack-badge"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+      <span class="stack-badge"><i class="bi bi-braces"></i> Django</span>
+      <span class="stack-badge"><i class="bi bi-database"></i> Supabase</span>
+      <span class="stack-badge"><i class="bi bi-robot"></i> ChatGPT</span>
+      <span class="stack-badge"><i class="bi bi-git"></i> Git</span>
+      <span class="stack-badge"><i class="bi bi-filetype-py"></i> Python</span>
+      <!-- Repeat for smooth loop -->
+      <span class="stack-badge"><i class="bi bi-filetype-html"></i> HTML</span>
+      <span class="stack-badge"><i class="bi bi-filetype-css"></i> CSS</span>
+      <span class="stack-badge"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+      <span class="stack-badge"><i class="bi bi-braces"></i> Django</span>
+      <span class="stack-badge"><i class="bi bi-database"></i> Supabase</span>
+      <span class="stack-badge"><i class="bi bi-robot"></i> ChatGPT</span>
+      <span class="stack-badge"><i class="bi bi-git"></i> Git</span>
+      <span class="stack-badge"><i class="bi bi-filetype-py"></i> Python</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Crafted with passion by Arogundade Oladayo © 2025 -->
+     Made with love 🧡 by Arogundade Oladayo © 2025
+  </footer>
+
+</body>
+</html>

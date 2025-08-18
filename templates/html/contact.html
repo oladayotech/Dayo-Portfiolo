@@ -57,7 +57,7 @@
       margin-top: 3rem;
     }
     .contact-us h2 {
-      color: #E27D60;
+      /* color: #E27D60; */
       font-weight: 700;
       margin-bottom: 1.5rem;
       text-align: center;
@@ -160,9 +160,6 @@
         flex-direction: column;
         align-items: center;
       }
-      .contact-link a{
-        color: #E27D60;
-      }
       footer {
         font-size: 0.8rem;
         padding: 0.5rem;
@@ -182,37 +179,6 @@
       <a style="color: #E27D60;" href="contact.html">Contact</a>
     </nav>
   </header>
-
-  <!-- Contact Section -->
-  <section class="contact-us container">
-    <h2>If you liked my portfolio, Let's Connect🧡 <br> Get in Touch</h2>
-    <!-- <h2>Get in Touch</h2> -->
-    <!-- <p class="text-muted"> -->
-      <!-- I’m always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. 
-      Feel free to send me a message and I’ll get back to you. -->
-      <!-- Open to new opportunities and collaborations. Feel free to send me a message and I’ll get back to you. -->
-    <!-- </p> -->
-
-    <form action="https://formspree.io/f/mrblvdpb" method="POST">
-        <p class="text-muted">
-      <!-- I’m always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. 
-      Feel free to send me a message and I’ll get back to you. -->
-      Open to new opportunities and collaborations. Feel free to send me a message and I’ll get back to you.
-    </p>
-      <div class="row g-3 mb-3">
-        <div class="col-md-6">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="col-md-6">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
-      </div>
-      <div class="mb-3">
-        <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-custom w-100">Send Message</button>
-    </form>
-  </section>
 
   <!-- Contact -->
   <section class="contact container text-center mt-5">
@@ -241,6 +207,31 @@
         </a>
       </div>
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-us container">
+    <h2>If you liked my portfolio, Let's Connect🧡</h2>
+
+    <form action="https://formspree.io/f/mrblvdpb" method="POST">
+        <p class="text-muted">
+      <!-- I’m always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. 
+      Feel free to send me a message and I’ll get back to you. -->
+      Open to new opportunities and collaborations. Feel free to send me a message and I’ll get back to you.
+    </p>
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom w-100">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->

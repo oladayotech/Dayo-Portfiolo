@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Oladayo's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #dccfbc;
+      font-family: 'Libre Baskerville', sans-serif;
+      color: black;
+      margin: 0;
+    }
+
+    header {
+      padding: 10px 0 20px 0;
+      border-bottom: 2.5px solid rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-weight: 700;
+      color: #E27D60;
+    }
+    header nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    header nav a:hover{
+      color: #E27D60;
+    }
+
+    .contact-us {
+      padding: 3rem 0;
+      border-left: 1px solid #E27D60;
+      border-right: 1px solid #E27D60;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-top: 3rem;
+    }
+    .contact-us h2 {
+      color: #E27D60;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .contact-us p {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      font-size: 1rem;
+    }
+    .contact-us form {
+      max-width: 600px;
+      margin: auto;
+    }
+    .form-control:focus {
+      border-color: #E27D60;
+      box-shadow: 0 0 0 0.2rem rgba(226,125,96,0.25);
+    }
+    .btn-custom {
+      background-color: #E27D60;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #c45f47;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="container d-lg-flex justify-content-between align-items-center mt-4">
+    <h1>Arogundade Oladayo</h1>
+    <nav class="mt-md-4">
+      <a href="index.html">History</a>
+      <a href="project.html">Projects</a>
+      <a href="#">Resume</a>
+      <a style="color: #E27D60;" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-us container">
+    <h2>Get in Touch</h2>
+    <p class="text-muted">
+      I’m always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. 
+      Feel free to send me a message and I’ll get back to you.
+    </p>
+
+    <form action="https://formspree.io/f/mrblvdpb" method="POST">
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom w-100">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Made with love 🧡 by Arogundade Oladayo © 2025
+  </footer>
+
+</body>
+</html>

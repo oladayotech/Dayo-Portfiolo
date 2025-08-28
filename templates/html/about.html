@@ -159,11 +159,42 @@
         padding: 0.5rem;
       }
     }
+
+
+    /* About Section */
+.about-title {
+  color: #E27D60;
+  font-weight: 700;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #E27D60;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .about-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
     </style>
 
    <!-- Header -->
   <header class="container d-lg-flex justify-content-between align-items-center mt-3">
-    <h1>Arogundade Oladayo</h1>
+    <a href="/index.html" style="text-decoration: none;"><h1>Arogundade Oladayo</h1></a>
     <nav class="mt-md-4">
       <a style="color: #E27D60;" href="about.html">About</a>
       <a href="project.html">Projects</a>
@@ -171,6 +202,42 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+
+  <!-- About Section -->
+<section class="about container mt-5">
+  <div class="row align-items-center">
+    
+    <!-- Text -->
+    <div class="col-md-7">
+      <h2 class="about-title mb-3">About Me</h2>
+      <p class="about-text">
+        Hi, I’m <span class="highlight">Arogundade Oladayo</span> 🧡 — a passionate
+        <strong>Full Stack Developer</strong> with a focus on 
+        <strong>Python, Django, and modern web technologies</strong>.  
+      </p>
+      <p class="about-text">
+        I enjoy transforming ideas into functional web experiences. 
+        Most of my learning comes from <em>building projects</em>, 
+        solving real-world problems, and exploring new technologies.  
+      </p>
+      <p class="about-text">
+        Beyond coding, I’m constantly sharpening my 
+        <strong>problem-solving skills</strong> through algorithms & data structures, 
+        and I love collaborating with others to build meaningful projects.  
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="your-profile-image.png" 
+           alt="Portrait of Arogundade Oladayo" 
+           class="img-fluid rounded-circle shadow"
+           style="max-width: 230px;">
+    </div>
+  </div>
+</section>
+
 
 
   <!-- Contact -->
